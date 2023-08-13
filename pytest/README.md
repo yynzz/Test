@@ -1,5 +1,5 @@
 # pytest-demo
-This is a pytest framework demo
+This is a pytest framework demo.
 
 ### Folder Structure
 ```
