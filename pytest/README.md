@@ -19,38 +19,33 @@ pytest-demo
 pip install pytest
 ```
 
-### Define module & test
+### Module & test
 - Define a class named Module in `module.py`.  
-- In `test_module.py`, import the class Mudule, and define test functions. Adds the “test” prefix to every name.  
+- In `test_module.py`, import the class Mudule, and define test functions. Adds the "test" prefix to every name.  
 -  Add the project path (pytest-demo) to the environment variable `PYTHONPATH`.  
 
-Edit `.bashrc` profile.  
+Edit `.bashrc` profile; paste the line at the end: 
 
 ```
 vim ~/.bashrc 
 ```
-
-Paste the following at the end:  
 ```
 export PYTHONPATH="${PYTHONPATH}:/foo/pytest-demo"
-
 ```
 
 Source the bashrc profile when run your code.  
 
 ```
-source ~/.bashrc 
-
+source ~/.bashrc
 ```
 
-### Test `Module.get_true()` returns True & `Module.get_false()` returns False
+### Test
+Test `Module.get_true()` returns True, and `Module.get_false()` returns False.  
 
 cd to the project path (pytest-demo) and run:
 ```
 pytest
 
 ```
-or more details run:
-```
-pytest -v
-```
+or more details run `pytest -v`.
+ 
