@@ -1,7 +1,7 @@
 # pytest-demo
 This is a pytest framework demo.
 
-### Folder Structure
+### Folder structure
 ```
 pytest-demo
     │  README.md
@@ -22,9 +22,11 @@ pip install pytest
 ### Module & test
 - Define a class named Module in `module.py`.  
 - In `test_module.py`, import the class Mudule, and define test functions. Adds the "test" prefix to every name.  
--  Add the project path (pytest-demo) to the environment variable `PYTHONPATH`.  
 
-Edit `.bashrc` profile; paste the line at the end: 
+### Environment variable
+Add the project path (pytest-demo) to the environment variable `PYTHONPATH`.  
+
+- Edit `.bashrc` profile; paste the line at the end: 
 
 ```
 vim ~/.bashrc 
@@ -33,19 +35,18 @@ vim ~/.bashrc
 export PYTHONPATH="${PYTHONPATH}:/foo/pytest-demo"
 ```
 
-Source the bashrc profile when run your code.  
+- Source the bashrc profile when run the code.  
 
 ```
 source ~/.bashrc
 ```
 
 ### Test
-Test `Module.get_true()` returns True, and `Module.get_false()` returns False.  
+Test `Module.get_true()` returns True and `Module.get_false()` returns False.  
 
 cd to the project path (pytest-demo) and run:
 ```
 pytest
-
 ```
-or more details run `pytest -v`.
+or run `pytest -v` for more details.
  
